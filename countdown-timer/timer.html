@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTDOWN TIMER &#9200;</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        margin: 4rem;
+    }
+
+    .btn-wrapper button {
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-right: 0.4rem;
+    }
+</style>
+
+<script src="timer-script.js" defer></script>
+
+<body>
+
+    <div class="wrapper">
+        <span class="time" id="hour-div">00</span>
+        :
+        <span class="time" id="min-div">00</span>
+        :
+        <span class="time" id="sec-div">00</span>
+    </div>
+
+    <div class="btn-wrapper">
+        <button id="start-btn">START</button>
+        <button id="reset-btn">RESET</button>
+    </div>
+</body>
+
+</html>

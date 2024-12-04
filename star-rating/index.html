@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        background-color: black;
+        color: white;
+
+    }
+
+    body {
+        margin: 3rem;
+    }
+
+    .container {
+        font-size: 2rem;
+
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container span {
+        cursor: pointer;
+    }
+
+    .highlight {
+        color: yellow;
+    }
+</style>
+
+<script src="script.js" defer></script>
+
+<body>
+    <div class="container">
+        <span data-index="1">&#9733</span>
+        <span data-index="2">&#9733</span>
+        <span data-index="3">&#9733</span>
+        <span data-index="4">&#9733</span>
+        <span data-index="5">&#9733</span>
+    </div>
+    <p>Selected Rating: <span id="selected-rating">0</span></p>
+</body>
+
+</html>
