@@ -1,8 +1,8 @@
 import { Trie } from './trie.js'; 
 
 const availableKeywords = [
-  "HTML",
-  "CSS",
+  "acknowledge HTML",
+  "great CSS",
   "Easy Tutorials",
   "JavaScript",
   "Where too learn coding",

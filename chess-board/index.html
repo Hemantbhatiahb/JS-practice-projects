@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace Queen Path</title>
+</head>
+    <style>
+        * {
+            font-family:'Times New Roman', Times, serif
+        }
+
+        body {
+            margin: 100px 100px;
+            
+        }
+        table {
+            border: 1px solid black;
+        }
+
+        .white {
+            background-color:white;
+        }
+        .black {
+            background-color:black;
+            color:white;
+        }
+        .red {
+            background-color:red;
+        }
+
+        .cell {
+            width:45px;
+            height: 45px;
+            cursor: pointer;
+        }
+        
+        h1 {
+            font-weight: 500;
+        }
+        span {
+            font-size: 1rem;
+        }
+    </style>
+<body>
+    
+    <div class="container">
+        <H1>CHESS BOARD <span>Trace Queen Path</span></H1>
+        <table class="board" id="table" cellspacing="0"></table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
