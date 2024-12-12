@@ -46,6 +46,11 @@
         text-align: center;
     }
 
+    .heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
     button {
         width: fit-content;
         background-color: white;
@@ -57,6 +62,10 @@
     button:hover {
         scale: 1.05;
         transition: all 0.5 ease;
+    }
+
+    .add-board{
+        height: fit-content;
     }
 
     .task {
@@ -72,7 +81,7 @@
         justify-content: space-between;
     }
 
-    .remove-task-btn {
+    .remove-btn {
         border: none;
     }
 
@@ -88,14 +97,19 @@
     .drag-over {
         border: 3px dashed green;
     }
+
+    
 </style>
 
 <body>
 
     <main class="container">
-        <section class="lanes">
+        <!-- <section class="lanes">
             <div class="lane">
-                <h1 class="title">ToDo </h1>
+                <div class="heading">
+                    <h1 class="title">ToDo </h1>
+                    <button class="remove-btn">❌</button>
+                </div>
                 <button class="task-btn">+ Add</button>
             </div>
 
@@ -109,12 +123,13 @@
                 <button class="task-btn">+ Add</button>
             </div>
 
-        </section>
-        <button class='add-board' id="boardBtn"> + Board</button>
+            <button class='add-board' > + Board</button>
+        </section> -->
     </main>
 
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="kanban.js"> </script>
 </body>
 
 </html>
