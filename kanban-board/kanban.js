@@ -67,15 +67,15 @@ class KanbanBoard {
 
       removeBoardBtn.addEventListener("click", (e) => {
         e.stopPropagation();
-        const board = removeBoardBtn.closest('.lane');
+        const board = removeBoardBtn.closest(".lane");
         const boardId = board.id;
 
         this.db.boards = this.db.boards.filter((board) => board.id != boardId);
-        this.db.tasks = this.db.tasks.filter(task => task.boardId != boardId)
-        
+        this.db.tasks = this.db.tasks.filter((task) => task.boardId != boardId);
+
         board.remove();
         localStorage.setItem("boards", JSON.stringify(this.db.boards));
-        localStorage.setItem('tasks', JSON.stringify(this.db.tasks))
+        localStorage.setItem("tasks", JSON.stringify(this.db.tasks));
       });
 
       const taskBtn = document.createElement("button");
